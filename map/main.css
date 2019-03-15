@@ -121,7 +121,7 @@ a:hover {
 
 /* All divs except the wrapper */
 #title, #info, #map, #navbar {
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 @keyframes move-in {
@@ -155,4 +155,12 @@ table, tr, th, td {
   border-width: 1px;
   border-color: black;
   border-collapse: collapse;
+}
+
+#popup {
+  position: absolute;
+  background-color: #aeffd9;
+  border-radius: 2px;
+  padding: 3px;
+  opacity: 0;
 }
