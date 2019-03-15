@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Petroleum Import & Export</title>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="grid.css" />
+  
+</head>
+
+<body>
+  <div id="wrapper">
+
+      <div id="navbar">
+          <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <span class="dropmenu">
+              <li class="drop-btn"><a href="../origin.html">ORIGIN OF MATERIALS</a></li>
+              <span class="drop">
+                <a href="../origin.html">DESCRIPTION</a>
+                <a href="worldmap.html">INTERACTIVE MAP</a>
+              </span>
+            </span>
+            <li><a href="../processing.html">PROCESSING OF MATERIALS</a></li>
+            <li><a href="../fate.html">FATE</a></li>
+            <li><a href="../bib.html">SOURCES</a></li>
+          </ul>
+        </div>
+
+    <div id="title">
+      <h1>Import & Export Percentages of Petroleum from around the World</h1>
+    </div>
+
+    <div id="info">
+      <div id="key">
+
+        <div id="exportI">
+          <img src="export.png" />
+        </div>
+
+        <div id="exportT">
+          <p>One of the top 5
+            <span style="color: #b2b7ff;">exporters</span> of petroleum</p>
+        </div>
+
+        <div id="importI">
+          <img src="import.png" />
+        </div>
+
+        <div id="importT">
+          <p>One of the top 5
+            <span style="color: #b5ffb2;">importers</span> of petroleum</p>
+        </div>
+
+      </div>
+      <!-- closes #key-->
+
+      <div id="summary">
+
+        <div id="explanation">
+          <p>This map is a visualization of the top importers and exporters of petroleum in the world. All information was gathered
+            from
+            <a href="https://atlas.media.mit.edu/en/profile/hs92/270900/" target="_blank">the Observatory of Economic Complexity.</a>
+          </p>
+        </div>
+        <!-- closes #explanation-->
+
+        <table>
+          <tr>
+            <th>Rank Number</th>
+            <th>Import</th>
+            <th>Export</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>China</td>
+            <td>Saudia Arabia</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>United States of America</td>
+            <td>Russia</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>India</td>
+            <td>Iraq</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Japan</td>
+            <td>Canada</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>South Korea</td>
+            <td>United Arab Emirates</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+    <!-- closes #info-->
+
+  </div>
+  <!-- closes #wrapper-->
+
+  <div id="popup"></div>
+
+  <script src="importExportPetroleum.js"></script>
+  <script src="countries.geojson"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script> 
+  <script src="worldmap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+body {
+  font-family: "Gill Sans", monospace;
+  font-weight: lighter;
+  color: black;
+      
+  /* Cool Scrolling (Parallax) Effect */
+  background-image: url("https://i.pinimg.com/564x/1d/7e/8b/1d7e8ba688777e7b8ef39a9f69c166f3.jpg?b=t");
+
+  /* Makes the image be a certain height */
+  min-height: 750px; 
+
+  /* Makes the image not move */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  padding: 5px;
+  margin: 1px;
+}
+
+h1 {
+  animation-name: move-in;
+  animation-duration: 5s;
+  margin: 15px;
+}
+
+p {
+  padding: 5px;
+}
+
+a:hover {
+  color: #9f45ff;
+}
+
+#wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+#title {
+  text-align: center;
+}
+
+/* Navigation Bar Styling */
+#navbar {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  display: inline-block;
+  margin: 1px;
+}
+
+#navbar li a {
+  display: block;
+  padding: 7px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+#navbar li:hover {
+  background-color: #dddddd;
+  transition: .5s;
+}
+
+#navbar li a:hover {
+  color: white;
+  transition: .5s;
+}
+
+#navbar {
+  background-color: #ffffff;
+  font-weight: lighter;
+}
+
+/* Dropdown Menu Styling */
+.dropmenu {
+  position: relative;
+  display: inline-block;
+}
+
+.drop {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.drop a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropmenu:hover .drop{
+  display: block;
+  background-color: white;
+  box-shadow: 5px 5px rgba(255, 255, 255, 0.7);
+}
+
+.dropmenu .drop a:hover {
+  background-color: #dddddd;
+  color: white;
+  transition: .5s;
+}
+
+/* All divs except the wrapper */
+#title, #info, #map, #navbar {
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+@keyframes move-in {
+  from {margin-left: -200px;}
+  to {margin-left: 0;}
+}
+
+th {
+  font-weight: lighter;
+}
+
+th, td {
+  padding: 3px;
+}
+
+tr:hover {
+  background-color: rgba(221, 221, 221, 0.7);
+  transition: 0.5s;
+}
+
+table {
+  padding: 3px;
+}
+
+table {
+  width: 100%;
+}
+
+table, tr, th, td {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-collapse: collapse;
+}
